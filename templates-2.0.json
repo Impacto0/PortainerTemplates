@@ -5288,7 +5288,7 @@
 			"type": 1,
 			"volumes": [
 			  {
-				"container": "/var/lib/grafana",
+				"container": "/var/lib/grafana"
 			  }
 			],
 			"env": [
