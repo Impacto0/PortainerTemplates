@@ -5250,8 +5250,8 @@
 				"default": "postgres"
 			  }
 			]
-		  },
-		  {
+		},
+		{
 			"categories": [
 				"Tools",
 				"Management",
@@ -5268,8 +5268,8 @@
 			"restart_policy": "unless-stopped",
 			"title": "Prometheus",
 			"type": 1
-		  },
-		  {
+		},
+		{
 			"categories": [
 				"Tools",
 				"Management",
@@ -5298,6 +5298,6 @@
 					"name": "GF_SERVER_HTTP_PORT"
 				}
 			]
-		  }
+		}
   ]
 }
