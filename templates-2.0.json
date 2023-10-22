@@ -5250,6 +5250,54 @@
 				"default": "postgres"
 			  }
 			]
+		  },
+		  {
+			"categories": [
+				"Tools",
+				"Management",
+				"Monitoring"
+			],
+			"description": "Prometheus is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts if some condition is observed to be true.",
+			"image": "prom/prometheus:latest",
+			"logo": "https://raw.githubusercontent.com/prometheus/prometheus/main/documentation/images/prometheus-logo.svg",
+			"name": "prometheus",
+			"platform": "linux",
+			"ports": [
+				"9090:9090/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Prometheus",
+			"type": 1
+		  },
+		  {
+			"categories": [
+				"Tools",
+				"Management",
+				"Monitoring"
+			],
+			"description": "Grafana",
+			"image": "grafana/grafana:latest",
+			"logo": "https://www.gravatar.com/avatar/31cea69afa424609b2d83621b4d47f1d?s=80&r=g&d=mm",
+			"name": "grafana",
+			"platform": "linux",
+			"ports": [
+				"9191:9191/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Grafana",
+			"type": 1,
+			"volumes": [
+			  {
+				"container": "/var/lib/grafana",
+			  }
+			],
+			"env": [
+				{
+					"default": "9191",
+					"label": "GF_SERVER_HTTP_PORT",
+					"name": "GF_SERVER_HTTP_PORT"
+				}
+			]
 		  }
   ]
 }
