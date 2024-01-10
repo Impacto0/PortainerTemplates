@@ -5298,6 +5298,40 @@
 					"name": "GF_SERVER_HTTP_PORT"
 				}
 			]
+		},
+		{
+			"description": "Paper minecraft server",
+			"image": "itzg/minecraft-server",
+			"name": "Paper minecraft server",
+			"platform": "linux",
+			"ports": [
+				"25565:25565"
+			],
+			"env": [
+				{
+					"default": "TRUE",
+					"label": "EULA",
+					"name": "EULA"
+				},
+				{
+					"default": "PAPER",
+					"label": "TYPE",
+					"name": "TYPE"
+				},
+				{
+					"default": "2G",
+					"label": "MEMORY",
+					"name": "MEMORY"
+				}
+			],
+			"volumes": [
+				{
+					"container": "/data"
+				}
+			],
+			"type": 1,
+			"title": "Paper minecraft server",
+			"restart_policy": "unless-stopped"
 		}
   ]
 }
