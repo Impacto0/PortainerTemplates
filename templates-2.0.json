@@ -5332,6 +5332,23 @@
 			"type": 1,
 			"title": "Paper minecraft server",
 			"restart_policy": "unless-stopped"
+		},
+		{
+			"description": "Velocity minecraft proxy",
+			"image": "itzg/bungeecord",
+			"name": "Velocity minecraft proxy",
+			"platform": "linux",
+			"ports": [
+				"25577:255"
+			],
+			"volumes": [
+				{
+					"container": "/server"
+				}
+			],
+			"type": 1,
+			"title": "Velocity minecraft proxy",
+			"restart_policy": "always"
 		}
   ]
 }
