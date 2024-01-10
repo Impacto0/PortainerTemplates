@@ -5322,6 +5322,11 @@
 					"default": "2G",
 					"label": "MEMORY",
 					"name": "MEMORY"
+				},
+				{
+					"default": "LATEST",
+					"label": "VERSION",
+					"name": "VERSION"
 				}
 			],
 			"volumes": [
