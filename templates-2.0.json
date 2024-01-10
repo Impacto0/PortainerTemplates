@@ -5305,7 +5305,7 @@
 			"name": "Paper minecraft server",
 			"platform": "linux",
 			"ports": [
-				"25565:25565"
+				"25565:25565/tcp"
 			],
 			"env": [
 				{
@@ -5344,7 +5344,19 @@
 			"name": "Velocity minecraft proxy",
 			"platform": "linux",
 			"ports": [
-				"25577:255"
+				"25565:25565/tcp"
+			],
+			"env": [
+				{
+					"default": "VELOCITY",
+					"label": "TYPE",
+					"name": "TYPE"
+				},
+				{
+					"default": "400M",
+					"label": "MEMORY",
+					"name": "MEMORY"
+				}
 			],
 			"volumes": [
 				{
